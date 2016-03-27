@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/screen">
+
+    <TextView android:text="Kid Show Quiz" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_marginLeft="0dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff8a00" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="High score:"
+        android:id="@+id/highscore"
+        android:textColor="#1194ff"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="43dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0/5"
+        android:id="@+id/score"
+        android:textColor="#1b28ff"
+        android:layout_marginLeft="-0dp"
+        android:layout_alignTop="@+id/highscore"
+        android:layout_toEndOf="@+id/score2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset High Score"
+        android:id="@+id/reset"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:textSize="18dp" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/highscore"
+        android:layout_marginTop="23dp"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="What is the name of the purple dragon in Dragon Tales?"
+            android:textSize="11dp"
+            android:ems="20"
+            android:id="@+id/q1"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="What is the name of Hacker's short sidekick in Cyberchase?"
+            android:textSize="11dp"
+            android:ems="10"
+            android:id="@+id/q2"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="What is Hacker's favorite color in Cyberchase?"
+            android:textSize="11dp"
+            android:ems="10"
+            android:id="@+id/q3"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="What is the name of Elmo's pet fish in Sesame Street?"
+            android:textSize="11dp"
+            android:ems="10"
+            android:id="@+id/q4"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="What is the name of the smart kid in Arthur?"
+            android:textSize="11dp"
+            android:ems="10"
+            android:id="@+id/q5" />
+
+        <Button
+            android:layout_width="258dp"
+            android:layout_height="wrap_content"
+            android:height="50dp"
+            android:width="100dp"
+            android:text="Submit"
+            android:id="@+id/submit"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your score:"
+        android:id="@+id/yourScore"
+        android:layout_marginBottom="42dp"
+        android:textColor="#1194ff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/highscore" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/score2"
+        android:text=""
+        android:textColor="#1926ff"
+        android:layout_marginLeft="-0dp"
+        android:layout_alignTop="@+id/yourScore"
+        android:layout_toEndOf="@+id/yourScore" />
+
+
+
+</RelativeLayout>
+
